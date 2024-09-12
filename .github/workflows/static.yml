@@ -46,7 +46,7 @@ jobs:
       run: jruby -S gem install nokogiri
     # Kickoff!
     - name: Run CIBuild
-      run: jruby Tools/bin/cibuild.rb
+      run: jruby Tools/bin/cibuild.rb -l build/buiid.log
     # Upload content
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
